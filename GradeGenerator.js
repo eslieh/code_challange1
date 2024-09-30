@@ -1,5 +1,5 @@
 // get inputs
-const marks = prompt("enter students marks");
+const marks = parseInt(prompt("enter students marks"));
 // check is marks is between 0 and 100
 if(marks >= 0 && marks <= 100){
     function grader(){

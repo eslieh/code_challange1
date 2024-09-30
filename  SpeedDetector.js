@@ -1,5 +1,5 @@
 // initialise the speed and speed limit
-let speed = prompt("Input Speed: ");
+let speed = parseInt(prompt("Input Speed: "));
 let limit = 70;
 function speedDetector(){
     let responce;

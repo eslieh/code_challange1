@@ -1,14 +1,14 @@
 // get inputs
-let basicSalary = prompt("Basic Salary: ");
-let benefits = prompt("Benefits: ");
+let basicSalary = parseInt(prompt("Basic Salary: "));
+let benefits = parseInt(prompt("Benefits: "));
   // Calculate gross salary
 let grossSalary = basicSalary + benefits;
 function payee(){
-    let pay;
+    let pay = 0;
     if(grossSalary <= 24000){
         pay = 0.10 * grossSalary;
     }else if(grossSalary >= 24001 && grossSalary <= 32333){
-        pay = 0.25 * grossSalary ;
+        pay = 0.25 * grossSalary;
     }else if(grossSalary >= 32334 && grossSalary <= 500000){
         pay = 0.30 * grossSalary;
     }else if(grossSalary >= 500001 && grossSalary <= 800000){
@@ -20,7 +20,7 @@ function payee(){
 }
   // Calculate NHIF deductions
 function NHIF(){
-    let nhif;
+    let nhif = 0;
     if(grossSalary <= 5999){
         nhif = 150;
     }else if(grossSalary >= 6000 && grossSalary <= 7999){
